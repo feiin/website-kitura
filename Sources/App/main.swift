@@ -8,6 +8,8 @@ let router = Router()
 
 HeliumLogger.use()
 
+//use StaticFileServer
+router.all("/", middleware: StaticFileServer(path: "Public", options: StaticFileServer.Options.init(), customResponseHeadersSetter: nil))
 
 router.all(middleware: RequestLogger())
 // Handle HTTP GET requests to /
