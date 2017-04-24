@@ -1,0 +1,25 @@
+{
+  "name": "swiftmi-web",
+  "homepage": "https://github.com/swiftmi/website",
+  "authors": [
+    "feiin <feiin@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

@@ -1,8 +1,15 @@
 import Kitura
+import Middlewares
+import HeliumLogger
+import LoggerAPI
 
 // Create a new router
 let router = Router()
 
+HeliumLogger.use()
+
+
+router.all(middleware: RequestLogger())
 // Handle HTTP GET requests to /
 router.get("/") {
     request, response, next in
