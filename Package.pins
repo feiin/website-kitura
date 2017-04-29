@@ -8,10 +8,52 @@
       "version": "0.2.3"
     },
     {
+      "package": "CMySQL",
+      "reason": null,
+      "repositoryURL": "https://github.com/vapor/cmysql.git",
+      "version": "1.0.0"
+    },
+    {
+      "package": "Configuration",
+      "reason": null,
+      "repositoryURL": "https://github.com/IBM-Swift/Configuration.git",
+      "version": "1.0.0"
+    },
+    {
+      "package": "Core",
+      "reason": null,
+      "repositoryURL": "https://github.com/vapor/core.git",
+      "version": "1.1.2"
+    },
+    {
+      "package": "Fluent",
+      "reason": null,
+      "repositoryURL": "https://github.com/vapor/fluent.git",
+      "version": "1.4.3"
+    },
+    {
+      "package": "FluentMySQL",
+      "reason": null,
+      "repositoryURL": "https://github.com/vapor/mysql-driver.git",
+      "version": "1.2.0"
+    },
+    {
       "package": "HeliumLogger",
       "reason": null,
       "repositoryURL": "https://github.com/IBM-Swift/HeliumLogger.git",
       "version": "1.7.0"
+    },
+    {
+      "package": "JSON",
+      "reason": null,
+      "repositoryURL": "https://github.com/vapor/json.git",
+      "version": "1.0.6"
+    },
+    {
+      "package": "Jay",
+      "reason": null,
+      "repositoryURL": "https://github.com/DanToml/Jay.git",
+      "version": "1.0.1"
     },
     {
       "package": "Kitura",
@@ -36,6 +78,30 @@
       "reason": null,
       "repositoryURL": "https://github.com/IBM-Swift/LoggerAPI.git",
       "version": "1.7.0"
+    },
+    {
+      "package": "MySQL",
+      "reason": null,
+      "repositoryURL": "https://github.com/vapor/mysql.git",
+      "version": "1.1.2"
+    },
+    {
+      "package": "Node",
+      "reason": null,
+      "repositoryURL": "https://github.com/vapor/node.git",
+      "version": "1.0.1"
+    },
+    {
+      "package": "PathIndexable",
+      "reason": null,
+      "repositoryURL": "https://github.com/vapor/path-indexable.git",
+      "version": "1.0.0"
+    },
+    {
+      "package": "Polymorphic",
+      "reason": null,
+      "repositoryURL": "https://github.com/vapor/polymorphic.git",
+      "version": "1.0.1"
     },
     {
       "package": "SSLService",

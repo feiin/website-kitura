@@ -1,0 +1,6 @@
+{
+    "host": "localhost",
+    "user": "root",
+    "password": "123",
+    "database": "swiftmi_db"
+}
