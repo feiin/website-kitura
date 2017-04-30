@@ -16,6 +16,7 @@ router.add(templateEngine: StencilTemplateEngine())
 router.all("/", middleware: StaticFileServer(path: "Public", options: StaticFileServer.Options.init(), customResponseHeadersSetter: nil))
 
 router.all(middleware: RequestLogger())
+router.all(middleware: HtmlResponse())
 // Handle HTTP GET requests to /
 router.get("/") {
     request, response, next in

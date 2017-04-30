@@ -9,8 +9,7 @@ import LoggerAPI
 public final class ArticleController {
     
    public class func List(request: RouterRequest, response: RouterResponse, next: () -> Void) throws {
-        //response.headers.setType("html", charset: "utf-8")
-        //try response.send("OK").end()
+        
         var pn = 1
         let pageSize = 10;
         do
