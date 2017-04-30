@@ -1,0 +1,46 @@
+<div class="header">
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header" id="navbar-header">
+                <a href="/" class="navbar-brand"><b>SWIFT</b> MI</a>
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-reorder"></i>
+            </button>
+            <div id="main-nav-menu" class="navbar-collapse collapse navbar-left">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">社区</a></li>
+                    <li class="active"><a href="/articles">发现</a></li>
+                    <li><a href="/trending">Trending</a></li>
+                    <li><a href="/books">图书</a></li>
+                    <li><a href="/code4swift">swift源代码</a></li>
+                    <li><a href="/timeline">时间线</a></li>
+                </ul>
+            </div>
+            <ul class="nav user-bar navbar-nav navbar-right hidden-xs hidden-sm">
+                <li><a href="/reg">注册</a></li>
+                <li><a href="/login">登录</a></li>
+            </ul>
+            <ul class="nav navbar-nav user-bar navbar-right">
+                <li class="nav-search hidden-xs hidden-sm">
+                    <form class="navbar-form form-search active" action="/search" method="GET">
+                        <div class="form-group">
+                            <input class="form-control" name="q" type="text" value="" placeholder="搜索本站内容" />
+                        </div>
+                        <i class="fa btn-search fa-search"></i>
+                    </form>
+                </li>
+                <li>
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        <i class="fa fa-plus"></i> <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class=""><a href="/topic/new">发布新话题</a></li>
+                        <li class=""><a href="/code4swift/new">分享源码/库</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,73 @@
+{% extends "base.stencil" %}
+{% block head %}
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Swift,Objective-c" />
+    <meta name="description" content="swift迷，发现Swift,Objective-c等教程">
+    <title>发现 - Swift迷 - 专业的Apple swift开发中文社区</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+{% endblock %}
+{% block body %}
+    <div class="main-container container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="topics panel panel-default">
+                    <div class="panel-heading clearfix">
+                        SWIFT HUNT
+                    </div>
+
+                    <div class="panel-body">
+                      {% for article in articles %}
+                            <div class="topic media  hacknews" data-id="{{article.articleId}}">
+                            <div class="avatar media-left ">
+                                <span class="">{{article.viewCount}}</span>
+                                <a title="赞" ><i class="fa fa-code"></i></a>
+                            </div>
+                            <div class="avatar media-left ">
+
+                                <a class="hacknews_clear">
+                                <div class="media-object avatar-48 authorAvatar" data-name="{{article.author}}" ></div>
+                                </a>
+                            </div>
+                            <div class="infos media-body">
+                                <div class="title media-heading">
+                                    <a title="{{article.title}}" class="" target="_blank" href="/articles/{{article.articleId}}">{{article.title}}</a>
+                                </div>
+                                <div class="info">
+                                    <a class="node" target="_blank" href="{{article.sourceUrl}}">{{article.sourceName}}</a>
+                                    •
+                                    <a data-name="{{article.author}}" class="" >{{article.author}}</a>
+
+                                    •
+                                    于 <abbr class="timeago" >{{article.createDate}}</abbr>发布
+                                </div>
+                            </div>
+                            <div class="count media-right">
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="panel-footer clearfix">
+                        {% include "pager.stencil" %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 sidebar">
+                <div class="panel panel-default">
+                    <div class="panel-heading">发现</div>
+                    <div class="panel-body">
+                        <p>发现主要收录聚合互联网上相关OC/Swift教程及文章,版权归原作者所有.</p>
+                    </div>
+                </div>
+                #embed("follow_us")
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/article/articlelist.js"></script>
+{% endblock %}

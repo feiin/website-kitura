@@ -17,7 +17,10 @@ public class  HtmlResponse: RouterMiddleware {
     
     public func handle(request: RouterRequest, response: RouterResponse, next: @escaping () -> Void) throws {
         //should remove when Kitura fixed this problem
-        response.headers.setType("html", charset: "utf-8")
+        var contentType = response.headers["Content-Type"]
+        if contentType == nil {
+            response.headers.setType("html", charset: "utf-8")
+        }
         next()
     }
 }

@@ -1,0 +1,25 @@
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="media">
+            <div class="media-left" style="margin-right:20px;">
+                <img class="media-object" src="/images/logo_128x128.png" style="width: 64px;">
+            </div>
+
+            <div class="media-body">
+                <div class="links">
+                    <a href="/timeline">关于</a> / <a href="https://appsto.re/cn/C3Hn7.i" target="_blank">Swiftmi-iOS</a> / <a href="https://github.com/swiftmi/swiftmi-osx" target="_blank">Swiftmi-OSX</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2014-2016 swiftmi.com <script src="https://s19.cnzz.com/z_stat.php?id=1253064815&web_id=1253064815" language="JavaScript"></script>
+                    <p>本站由开源<a href="https://www.swift.org" target="_blank">Swift</a> 驱动 , powered by <a href="https://www.swiftmi.com" target="_blank">swift迷</a></p>
+                 </div>
+                <div class="supports">
+                    <p style="text-align: center; vertical-align: middle;">
+                        <a href="https://www.dnspod.cn/" target="_blank"><img src="/img/dnspod.png" alt="dnspod"></a>
+                        <a href="https://portal.qiniu.com/signup?code=3lfl9p7asq5hu" target="_blank"><img src="/images/qn-logo.png" alt="七牛云存储"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

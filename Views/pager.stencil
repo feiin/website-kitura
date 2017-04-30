@@ -1,0 +1,10 @@
+<ul class="pager">
+    {% if pager.currentPage > 1 %} 
+    <li class="previous"><a href="?pn={{(pager.prevPage)}}">&larr; 上一页</a></li>
+    {% endif %}
+
+    <li class="number">{{pager.currentPage}}/{{pager.totalPage}}</li>
+    {% if pager.currentPage < pager.totalPage %} 
+    <li class="next"><a href="?pn={{pager.nextPage}}">下一页 &rarr;</a></li>
+    {% endif %}
+</ul>

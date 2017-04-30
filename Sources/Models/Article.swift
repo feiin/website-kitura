@@ -64,6 +64,11 @@ public final class Article: Model {
         result["articleId"] = id?.int
         result["content"] = content
         result["title"] = title
+        result["author"] = author
+        result["sourceName"] = sourceName
+        result["sourceUrl"] = sourceUrl
+        result["viewCount"] = viewCount
+        result["createDate"] = dateFormatter.string(from: createDate!)
 
         return result
     }

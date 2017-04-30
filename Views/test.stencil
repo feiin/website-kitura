@@ -3,3 +3,4 @@
     <li>{{ article.title }} by {{ article.author }}</li>
   {% endfor %}
 </ul>
+{% include "./articles/article_list.stencil" %}

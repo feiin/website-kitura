@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}{% endblock %}
+</head>
+<body>
+        {% include "nav.stencil" %}
+
+        {% block body %}{% endblock %}
+
+        {% include "footer.stencil" %}
+</body>
+</html>
