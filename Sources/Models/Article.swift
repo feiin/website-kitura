@@ -63,6 +63,8 @@ public final class Article: Model {
         var result = [String : Any]()
         result["articleId"] = id?.int
         result["content"] = content
+        result["title"] = title
+
         return result
     }
 }
