@@ -1,8 +1,6 @@
 import Kitura
-import Middlewares
 import HeliumLogger
 import LoggerAPI
-import Controllers
 import KituraStencil
 // Create a new router
 let router = Router()

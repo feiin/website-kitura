@@ -5,12 +5,7 @@ import PackageDescription
 let package = Package(
     name: "SwiftmiKituraWeb",
     targets: [
-        Target(name: "App",
-               dependencies: [.Target(name: "Middlewares"),.Target(name: "Models"),.Target(name: "Repositories"),.Target(name: "Controllers")]),
-        Target(name: "Middlewares"),
-        Target(name: "Models"),
-        Target(name: "Repositories"),
-        Target(name: "Controllers",dependencies:[.Target(name: "Models")])
+        Target(name: "App")
 
     ],
     dependencies: [

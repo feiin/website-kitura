@@ -1,6 +1,5 @@
 import Foundation
 import Kitura
-import Models
 import Fluent
 import FluentMySQL
 import SwiftyJSON
