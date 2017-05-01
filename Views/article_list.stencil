@@ -64,7 +64,7 @@
                         <p>发现主要收录聚合互联网上相关OC/Swift教程及文章,版权归原作者所有.</p>
                     </div>
                 </div>
-                #embed("follow_us")
+                {% include "follow_us.stencil" %}
             </div>
         </div>
     </div>

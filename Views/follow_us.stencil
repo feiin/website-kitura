@@ -1,0 +1,30 @@
+<div class="panel panel-default">
+    <div class="panel-heading">关注Swift迷</div>
+    <div class="panel-body">
+        <p>
+            <small>微信公众平台：搜索“Swift迷”或扫描下面的二维码：</small>
+        </p>
+        <div>
+            <img src="/img/qrcode.jpg" title="Swift迷-微信公众平台" alt="Swift迷-微信公众平台" style="width: 172px;height: 172px;">
+        </div>
+        <ul class="social-list">
+            <li class="social-list-item">
+               <i class="fa fa-weibo"></i> <a href="https://weibo.com/swiftmi" target="_blank" class="icon-weibo">Weibo</a>
+            </li>
+            <li class="social-list-item">
+                <i class="fa fa-rss"></i> <a href="https://www.swiftmi.com/topic.rss" target="_blank" class="icon-rss">Rss</a>
+            </li>
+
+        </ul>
+        <p>
+            <small>Swift开发交流QQ群:305170435</small>
+        </p>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">推荐 Swift 资源</div>
+    <ul class="list-group">
+        <li class="list-group-item"><i class="fa fa-book"></i> <a href="/swiftbook_cn/index.html">Swift语言中文版</a></li>
+        <li class="list-group-item"><i class="fa fa-code"></i> <a href="/code4swift" target="_blank">Swift源码</a></li>
+    </ul>
+</div>
