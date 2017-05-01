@@ -1,0 +1,60 @@
+{% extends "base.stencil" %}
+{% block head %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Swift,Objective-c" />
+    <meta name="description" content="swift迷，发现Swift,Objective-c等教程">
+    <title>{{article.title}} - Swift迷 - 专业的Apple swift开发中文社区</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+{% endblock %}
+{% block body %}
+    <div class="main-container container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="topic-detail panel panel-default">
+                <div class="panel-heading media clearfix">
+                    <div class="media-body">
+                        <div class="pull-right">
+                        </div>
+                        <h1 class="media-heading">
+                            {{article.title}}
+                        </h1>
+                        <div class="info">
+                            <a class="node" href="{{article.sourceUrl}}">{{article.sourceName}}</a>
+                            ·
+                            <a >{{article.author}}</a>
+                            ·
+                            发布于 <abbr class="timeago" >{{article.createDate}}</abbr>
+                            ·
+                            {{article.viewCount}} 次阅读
+                        </div>
+
+                    </div>
+                </div>
+                <div class="panel-body markdown">
+                    <article>
+                        {{article.content}}
+                    </article>
+                </div>
+
+                <div class="panel-footer clearfix">
+                    <div class="opts">
+                        <a title="赞" ><i class="fa fa-heart-o"></i> <span>赞</span></a>
+                        <a title="收藏" ><i class="fa fa-bookmark"></i> 收藏</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 sidebar">
+               {% include "follow_us.stencil" %}
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+{% endblock %}

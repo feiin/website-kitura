@@ -25,7 +25,8 @@ router.get("/") {
 }
 
 
-router.get("/articles",handler:ArticleController.List)
+router.get("/articles",handler:ArticleController.list)
+router.get("/articles/:id",handler:ArticleController.detail)
 
 // Add an HTTP server and connect it to the router
 Kitura.addHTTPServer(onPort: 8080, with: router)
